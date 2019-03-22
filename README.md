@@ -5,8 +5,8 @@ MP3 Visualizer
 In this program, we'll use the [minim sound library](http://code.compartmental.net/tools/minim/)
 to load and play an mp3 file.
 We'll then create some sort of animation
-that changes with the *amplitude<* (loudness) of the music.
-Your visualizer doesn't have to look anything like mine. Your visualizer could change color, shape, size or any other aspect to 
+that changes with the *amplitude* (loudness) of the music.
+Your visualizer doesn't have to look like any other. Your visualizer could change color, shape, size or any other aspect to 
 changes in amplitude in the music. Have fun and be creative!
 
 
@@ -53,7 +53,7 @@ void stop()
 
 3. The repo has a royalty free mp3 file you can use called `test.mp3`. Make sure the program runs and you can hear the song play before moving on to the next step.
 
-4, Now we need to add some code to `draw()` that responds to the music. The music is stored in two 
+4. Now we need to add some code to `draw()` that responds to the music. The music is stored in two 
 *buffers* of `float`s each called `song.left` and `song.right`. Just like an `ArrayList` you can find out how many elements are in the buffer with `song.left.size()`. Let's have an
 ellipse get bigger or smaller depending on the amplitude of the element in the middle of the left
 buffer. Try adding the following code to `draw()`:
