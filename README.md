@@ -54,12 +54,12 @@ void stop()
 3. The repo has a royalty free mp3 file you can use called `test.mp3`. Make sure the program runs and you can hear the song play before moving on to the next step.
 
 4. Now we need to add some code to `draw()` that responds to the music. The music is stored in two 
-*buffers* of `float`s each called `song.left` and `song.right`. Just like an `ArrayList` you can find out how many elements are in the buffer with `song.left.size()`. Let's have an
+*buffers* of `float`s each called `song.left` and `song.right`. Much like an `ArrayList` you can find out how many elements are in the buffer with `song.bufferSize()`. Let's have an
 ellipse get bigger or smaller depending on the amplitude of the element in the middle of the left
 buffer. Try adding the following code to `draw()`:
 ```java
   background(255,0,0);
-  int mid = song.left.size()/2;
+  int mid = song.bufferSize()/2;
   float diameter = mid * 200);
   ellipse(50,50,diameter,diameter);
 ```
