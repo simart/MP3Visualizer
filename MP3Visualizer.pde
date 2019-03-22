@@ -25,9 +25,9 @@ void draw()
   noStroke();
   rect(0,0,width,height);
   noStroke();
-  blueCircle();
-  redPolarGraph();
-  greenBarGraph();
+  //blueCircle();
+  //redPolarGraph();
+  //greenBarGraph();
 }
  
 void stop()
